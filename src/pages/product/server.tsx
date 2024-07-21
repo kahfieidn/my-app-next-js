@@ -15,7 +15,7 @@ export default ProductPage;
 //dipanggil setiap melakukan request
 export async function getServerSideProps() {
   //fetch data
-  const res = await fetch("http://localhost:3000/api/product");
+  const res = await fetch("https://my-app-next-js-nine.vercel.app/api/product");
   const response = await res.json();
 
   console.log(response);
